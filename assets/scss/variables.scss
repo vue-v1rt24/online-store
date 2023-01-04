@@ -1,0 +1,17 @@
+$padding: 8px;
+$margin: 8px;
+$radius: 4px;
+$btn-color: #b3d4fc;
+
+@mixin btn-color($bg: $btn-color, $color: black) {
+  color: $color;
+  background-color: $bg;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: .3s;
+  &:hover {
+    background-color: transparentize($bg, .3);
+  }
+}

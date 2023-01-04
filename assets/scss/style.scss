@@ -1,0 +1,36 @@
+@import url(reset.scss);
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 1366px;
+  box-sizing: content-box;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  @include btn-color();
+}
+
+.del {
+  @include btn-color(red, white)
+}
+
+.catalogLink {
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  padding: 20px 30px;
+}
